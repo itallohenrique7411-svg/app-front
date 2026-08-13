@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rede Social - Criar Conta</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #f0f2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #1a73e8;
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+      font-weight: 600;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="file"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background-color: #1557b0;
+    }
+    .link-container {
+      margin-top: 15px;
+      text-align: center;
+    }
+    .link-container a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .link-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Criar Conta</h1>
+    <form id="accountForm">
+      <div class="form-group">
+        <label for="name">Nome *</label>
+        <input type="text" id="name" required placeholder="Digite seu nome">
+      </div>
+      
+      
+      
+      <div class="form-group">
+        <label for="photo">Foto de Perfil (Opcional)</label>
+        <input type="file" id="photo" accept="image/*">
+      </div>
+      
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <div class="link-container">
+      <a href="profiles.html">Ver perfis já existentes →</a>
+    </div>
+  </div>
+
+  <script src="./script.js"> </script>
+</body>
+</html>
